@@ -1,16 +1,5 @@
-import CardItem from "../components/CardItem"
-import Footer from "../components/Footer"
-import Navbar from "../components/navbar"
-
 const Notebook = () => {
-  return (
-    <>
-      <Navbar/>
-      <CardItem/>
+  return <h1>Notebook</h1>;
+};
 
-      <Footer/>
-      </>
-  )
-}
-
-export default Notebook
+export default Notebook;
