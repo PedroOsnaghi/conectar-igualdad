@@ -51,7 +51,7 @@ export function Root({ children, className, name, isConnected = true }) {
   );
 }
 
-export function Container({ children, className }) {
+export function Container({ children, className, isConnected = true }) {
   const [inside, setInside] = useState(false);
   const [active, setActive] = useState(null);
 
@@ -67,14 +67,18 @@ export function Container({ children, className }) {
     <div
       className={`w-full border-[1px] border-lightSecondary rounded-md relative py-24 mb-[108px] ${className}`}
     >
-      <span className="border-[1px] border-lightSecondary absolute top-0 left-[50%] w-[34px] h-[34px] rounded-full translate-x-[-50%] translate-y-[-50%] bg-darkPrimary flex items-center justify-center">
-        <span className="w-[12px] h-[12px] bg-primary rounded-full shadow-[0_0_14px_5px_rgba(1,186,253,0.7)] " />
-      </span>
-      <span className="w-[1px] h-[108px]  absolute top-0 left-[50%] translate-y-[-100%] z-[-1] border-gradient" />
-      <span className="border-[1px] border-lightSecondary absolute bottom-0 left-[50%] w-[34px] h-[34px] rounded-full translate-x-[-50%] translate-y-[50%] bg-darkPrimary flex items-center justify-center">
-        <span className="w-[12px] h-[12px] bg-primary rounded-full shadow-[0_0_14px_5px_rgba(1,186,253,0.7)] " />
-      </span>
-      <span className="w-[1px] h-[108px]  absolute bottom-0 left-[50%] translate-y-[100%] rotate-180 z-[-1] border-gradient" />
+      {isConnected && (
+        <>
+          <span className="border-[1px] border-lightSecondary absolute top-0 left-[50%] w-[34px] h-[34px] rounded-full translate-x-[-50%] translate-y-[-50%] bg-darkPrimary flex items-center justify-center">
+            <span className="w-[12px] h-[12px] bg-primary rounded-full shadow-[0_0_14px_5px_rgba(1,186,253,0.7)] " />
+          </span>
+          <span className="w-[1px] h-[108px]  absolute top-0 left-[50%] translate-y-[-100%] z-[-1] border-gradient" />
+          <span className="border-[1px] border-lightSecondary absolute bottom-0 left-[50%] w-[34px] h-[34px] rounded-full translate-x-[-50%] translate-y-[50%] bg-darkPrimary flex items-center justify-center">
+            <span className="w-[12px] h-[12px] bg-primary rounded-full shadow-[0_0_14px_5px_rgba(1,186,253,0.7)] " />
+          </span>
+          <span className="w-[1px] h-[108px]  absolute bottom-0 left-[50%] translate-y-[100%] rotate-180 z-[-1] border-gradient" />
+        </>
+      )}
       <CardContext.Provider
         value={{ inside, setCurrent, active, setActiveCard }}
       >
@@ -88,7 +92,7 @@ export function Image({ src, alt, className }) {
   return <img src={src} alt={alt} className={`z-[3] ${className}`} />;
 }
 
-export function Content({ children }) {
+export function Content({ children, className, pointer = false }) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const { inside } = useContext(CardContext);
   const cardRef = useRef(null);
@@ -113,10 +117,17 @@ export function Content({ children }) {
     <div
       ref={cardRef}
       className={`p-9 relative w-full bg-darkSecondary  ${
-        !inside && "z-[100]"
-      }`}
+        !inside && "z-[100] "
+      } ${className}`}
     >
-      <div style={{ zIndex: 10, position: "relative", pointerEvents: "none" }}>
+      <div
+        style={{
+          zIndex: 10,
+          position: "relative",
+          cursor: `${pointer ? "pointer" : "default"}`,
+          pointerEvents: `${pointer ? "auto" : "none"}`,
+        }}
+      >
         {children}
       </div>
 
