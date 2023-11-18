@@ -13,6 +13,8 @@ export default function About() {
         estudiantes y docentes de instituciones educativas públicas.
       </p>
 
+     
+
       <Card.Container className="mt-36 flex flex-col gap-10">
         <Card.Root key="c1" name="card1" className="flex">
           <Card.Image

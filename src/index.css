@@ -16,6 +16,26 @@
   .paragraph-small {
     @apply text-[16px] text-lightPrimary opacity-30;
   }
+
+  .animacion-aparecer {
+    @apply animate-[fadeInOut] animate-delay-[2000ms] animate-duration-[4000ms] animate-ease-in-out;
+  }
+
+  .animacion-aparecer-rapida {
+    @apply opacity-0 animate-[fadeInShort] animate-delay-[5000ms] animate-duration-[1000ms] animate-fill-forwards animate-ease-in-out;
+  }
+
+  .animacion-card-1 {
+    @apply animate-[CardIn] animate-duration-[1000ms] animate-delay-[6500ms] animate-fill-forwards animate-ease-in-out;
+  }
+
+  .animacion-card-2 {
+    @apply animate-[CardIn] animate-duration-[1000ms] animate-delay-[6800ms] animate-fill-forwards animate-ease-in-out;
+  }
+
+  .animacion-card-3 {
+    @apply animate-[CardIn] animate-duration-[1000ms] animate-delay-[7100ms] animate-fill-forwards animate-ease-in-out;
+  }
 }
 
 .gamer-gradient {

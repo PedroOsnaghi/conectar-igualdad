@@ -1,5 +1,7 @@
 import { dell } from "../assets";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import LogoMinisterio from "./LogoMinisterio";
+import MenuCard from "./MenuCard";
 
 export default function Hero() {
   return (
@@ -10,14 +12,20 @@ export default function Hero() {
           <span className="text-lightPrimary font-bold">Unida</span>
         </h1>
         <div className="relative group">
+          <LogoMinisterio className="animacion-aparecer-rapida  absolute top-[6.5%] left-[22%] w-full z-10 max-w-[8%] translate-x-[50%] translate-y-[50%]" />
+
           <img
             src={dell}
             alt="Imagen Netbook generacion 2023 del programa conectar igualdad"
-            className="max-w-[65%] mx-auto mt-9"
+            className="relative max-w-[65%] mx-auto mt-9  mouse-events-none"
           />
-          <span className="animate-[fogBlueLeft] animate-infinite animate-duration-[4000ms] animate-ease animate-alternate   bg-primary w-[20%] aspect-square absolute top-[10%] left-[30%] rounded-full filter blur-2xl z-[-1]" />
-          <span className="animate-[fogWhite] animate-infinite animate-duration-[5000ms] animate-ease animate-alternate animate-delay-[1500ms] bg-lightPrimary w-[20%] aspect-square absolute top-[6%] right-[40%] rounded-full filter blur-2xl z-[-1]" />
-          <span className="animate-[fogBlueRight] animate-infinite animate-duration-[4000ms] animate-ease animate-alternate animate-delay-[1500ms]   bg-primary w-[20%] aspect-square absolute top-[10%] right-[30%] rounded-full filter blur-2xl z-[-1]" />
+          <MenuCard className="absolute top-0 left-0 " />
+          <div className="absolute bg-darkPrimary w-full max-w-[53%] translate-x-[44%] h-full max-h-[70%] translate-y-[18%] top-0 z-[-5] shadow-inner-xl shadow-neutral-500 " />
+          <LogoMinisterio className="animacion-aparecer opacity-0 absolute top-[30%] left-[30%] w-full z-0 max-w-[20%] translate-x-[50%] translate-y-[50%]" />
+          <div className="opacity-0 animate-[fadeIn] animate-duration-[7000ms]  animate-ease-in-out absolute bg-primary w-full max-w-[53%] translate-x-[44%] h-full max-h-[70%] translate-y-[18%] top-0 z-[-1] shadow-inner-xl shadow-neutral-500 " />
+          <span className="animate-[fogBlueLeft] animate-infinite animate-duration-[4000ms] animate-ease animate-alternate   bg-primary w-[20%] aspect-square absolute top-[10%] left-[30%] rounded-full filter blur-2xl z-[-10]" />
+          <span className="animate-[fogWhite] animate-infinite animate-duration-[5000ms] animate-ease animate-alternate animate-delay-[1500ms] bg-lightPrimary w-[20%] aspect-square absolute top-[6%] right-[40%] rounded-full filter blur-2xl z-[-10]" />
+          <span className="animate-[fogBlueRight] animate-infinite animate-duration-[4000ms] animate-ease animate-alternate animate-delay-[1500ms]   bg-primary w-[20%] aspect-square absolute top-[10%] right-[30%] rounded-full filter blur-2xl z-[-10]" />
         </div>
         <h3 className="mx-auto text-2xl font-inter font-semibold flex gap-2 mt-[35px]">
           <span className="text-lightSecondary">Conoce el nuevo modelo</span>

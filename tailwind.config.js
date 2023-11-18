@@ -49,6 +49,53 @@ export default {
             transform: "translateY(-10%) scaleY(1.05)",
           },
         },
+        fadeIn: {
+          "0%": {
+            opacity: 0,
+          },
+          "30%": {
+            opacity: 1,
+          },
+          "75%": {
+            opacity: 1,
+          },
+          "100%": {
+            opacity: 0,
+          },
+        },
+        fadeInShort: {
+          "0%": {
+            opacity: 0,
+          },
+
+          "100%": {
+            opacity: 1,
+          },
+        },
+        fadeInOut: {
+          "0%": {
+            opacity: 0,
+          },
+          "60%": {
+            opacity: 1,
+          },
+          "75%": {
+            opacity: 1,
+          },
+          "100%": {
+            opacity: 0,
+          },
+        },
+        CardIn: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(20%)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0)",
+          },
+        },
       },
     },
   },
