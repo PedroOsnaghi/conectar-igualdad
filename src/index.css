@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .title {
+    @apply text-lightSecondary text-[56px] font-bold;
+  }
+
+  .paragraph-medium {
+    @apply text-[18px] text-lightPrimary opacity-50;
+  }
+
+  .paragraph-small {
+    @apply text-[16px] text-lightPrimary opacity-30;
+  }
+}
+
+.gamer-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(55, 187, 236, 1) 0%,
+    rgba(241, 228, 255, 1) 30%,
+    rgba(235, 1, 255, 1) 60%,
+    rgba(255, 0, 107, 1) 100%
+  );
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gradient {
+  background: linear-gradient(
+    45deg,
+    rgba(154, 152, 152, 1) 0%,
+    transparent 100%
+  );
+  border-image-slice: 1;
+}
+
+.layer-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(21, 23, 24, 1) 25%,
+    transparent 100%
+  );
+  border-image-slice: 1;
+}
+
+.footer-gradient {
+  background: linear-gradient(0deg, rgba(36, 78, 108, 1) 25%, transparent 100%);
+  border-image-slice: 1;
+}
+.card-hover {
+  position: relative;
+  box-shadow: 0 0 16px rgb(1, 186, 253, 0.7);
+}
+
+.card-hover::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  padding: 1px;
+
+  inset: -1px;
+  border-radius: 10px;
+  background: linear-gradient(
+    45deg,
+    rgb(1, 186, 253) 0%,
+    rgba(241, 228, 255, 1) 50%,
+    rgba(55, 187, 236, 1) 100%
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.transitionShadow {
+  transition: all 0.4s ease-in-out;
+}
