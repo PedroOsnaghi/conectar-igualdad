@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -10,13 +10,13 @@ export default function Navbar() {
         <div className="">
           <ul className="flex gap-9 text-lightPrimary   cursor-pointer">
             <li className="hover:opacity-100  transition-all duration-100 opacity-75">
-              <Link to='/'>Inicio</Link>
+              <Link to="/">Inicio</Link>
             </li>
             <li className="hover:opacity-100  transition-all duration-100 opacity-75">
-            <Link to="/notebook" >Notebook</Link>
+              <Link to="/notebook">Notebook</Link>
             </li>
             <li className="hover:opacity-100  transition-all duration-100 opacity-75">
-            <Link to="/soporte-tecnico">Soporte Técnico</Link>
+              <Link to="/soporte-tecnico">Soporte Técnico</Link>
             </li>
           </ul>
         </div>

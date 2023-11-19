@@ -1,4 +1,4 @@
-import { dell } from "../assets";
+import { dell } from "../../../assets";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 export default function Hero() {
