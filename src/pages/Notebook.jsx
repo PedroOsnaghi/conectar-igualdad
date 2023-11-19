@@ -3,7 +3,7 @@ import Navbar from '../components/navbar'
 import Carousel from '../components/Carousel'
 import '../styles/Notebook.css'
 import { bannerNoteBook, netbook } from '../assets';
-import CardInfoNetBook from '../components/CardInfoNetBook';
+import AccordionDemo from '../components/Accordion';
 const Notebook = () => {
   return <>
     <Navbar/>
@@ -13,7 +13,7 @@ const Notebook = () => {
     <div className='container-netbook flex justify-center'>
     <img src={netbook} alt="" />
     </div>
-    <CardInfoNetBook/>
+    <AccordionDemo/>
     <Carousel/>
     <Footer/>
   </>
