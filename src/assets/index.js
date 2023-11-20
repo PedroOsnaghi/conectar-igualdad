@@ -19,6 +19,7 @@ import mask1 from "./mask1.webp";
 import mask2 from "./mask2.webp";
 import mask3 from "./mask3.webp";
 import mask4 from "./mask4.webp";
+import topThumb from "./top-thumb.webp";
 
 export {
   dell,
@@ -42,4 +43,5 @@ export {
   mask2,
   mask3,
   mask4,
+  topThumb,
 };

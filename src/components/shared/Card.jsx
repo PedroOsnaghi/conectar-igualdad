@@ -5,6 +5,10 @@ const CardContext = createContext({
   setCurrent: (b) => {
     b;
   },
+  active: null,
+  setActiveCard: (b) => {
+    b;
+  },
 });
 
 export function Card({ children }) {
