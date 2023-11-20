@@ -1,4 +1,4 @@
-import { logoME, logoArgentinaUnida } from "../assets";
+import { logoME, logoArgentinaUnida } from "../../../assets";
 
 export default function Footer() {
   return (

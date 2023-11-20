@@ -1,6 +1,6 @@
-import { dell } from "../assets";
+import { dell } from "../../../assets";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import LogoMinisterio from "./LogoMinisterio";
+import LogoMinisterio from "../../../components/LogoMinisterio";
 import MenuCard from "./MenuCard";
 
 export default function Hero() {

@@ -1,5 +1,5 @@
-import { Card } from "./Card";
-import { cardImageExample } from "../assets";
+import { Card } from "../../../components/Card";
+import { cardImageExample } from "../../../assets";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 export default function About() {
@@ -12,8 +12,6 @@ export default function About() {
         ámbito educativo mediante la distribución de computadoras portátiles a
         estudiantes y docentes de instituciones educativas públicas.
       </p>
-
-     
 
       <Card.Container className="mt-36 flex flex-col gap-10">
         <Card.Root key="c1" name="card1" className="flex">
