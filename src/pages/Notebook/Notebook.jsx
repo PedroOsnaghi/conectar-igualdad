@@ -24,13 +24,13 @@ const Notebook = () => {
           aria-label="Especificaciones tecnicas de tu Netbook"
         >
           <Tabs.Trigger
-            className="text-lightSecondary data-[state=active]:text-white px-5 h-[45px] flex items-center justify-center text-[15px]  "
+            className="text-lightSecondary data-[state=active]:text-white hover:text-opacity-80 data-[state=active]:shadow-[inset_0_-2px_0_0,0_2px_0_0] data-[state=active]:shadow-primary px-5 h-[45px] flex items-center justify-center text-[15px]  "
             value="especificaciones"
           >
             General
           </Tabs.Trigger>
           <Tabs.Trigger
-            className="text-lightSecondary data-[state=active]:text-white px-5 h-[45px] flex items-center justify-center text-[15px] "
+            className="text-lightSecondary data-[state=active]:text-white hover:text-opacity-80 data-[state=active]:shadow-[inset_0_-2px_0_0,0_2px_0_0] data-[state=active]:shadow-primary px-5 h-[45px] flex items-center justify-center text-[15px] "
             value="software y controladores"
           >
             Software y controladores

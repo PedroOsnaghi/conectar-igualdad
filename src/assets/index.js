@@ -12,6 +12,13 @@ import netbook from "./netbook-2023.webp";
 import windows from "./windows.webp";
 import huaira from "./huaira.webp";
 import download from "./download_driverIcon.webp";
+import dellThumb1 from "./dell-thumb-1.webp";
+import dellThumb2 from "./dell-thumb-2.webp";
+import dellThumb3 from "./dell-thumb-3.webp";
+import mask1 from "./mask1.webp";
+import mask2 from "./mask2.webp";
+import mask3 from "./mask3.webp";
+import mask4 from "./mask4.webp";
 
 export {
   dell,
@@ -28,4 +35,11 @@ export {
   windows,
   huaira,
   download,
+  dellThumb1,
+  dellThumb2,
+  dellThumb3,
+  mask1,
+  mask2,
+  mask3,
+  mask4,
 };

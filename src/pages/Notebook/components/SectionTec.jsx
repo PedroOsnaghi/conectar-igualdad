@@ -1,5 +1,12 @@
 import { Card } from "../../../components/shared/Card";
 import {
+  dellThumb1,
+  dellThumb2,
+  dellThumb3,
+  huaira,
+  windows,
+} from "../../../assets";
+import {
   AccordionCard,
   AccordionContent,
   AccordionHeader,
@@ -8,7 +15,42 @@ import {
 
 export default function SectionTec() {
   return (
-    <section className="container mx-auto flex flex-col items-center mt-[70px]">
+    <section className="container mx-auto flex flex-col items-center mt-[20px]">
+      <h3 className="title-medium self-start">Netbook G10 - DELL LA3120</h3>
+      <p className="paragraph-medium mt-2">
+        La Dell Latitude 3120 supera cualquier reto, ya que fue diseñada
+        pensando en la durabilidad y la movilidad. Al ser compacta y sólida,
+        proporciona el equilibrio adecuado entre rendimiento y productividad
+        para los estudiantes en movimiento, y ofrece todo lo que los estudiantes
+        necesitan, ya sea en el aula, en el hogar o en cualquier lugar donde el
+        aprendizaje los lleve.{" "}
+      </p>
+      <section className="w-full text-start mt-[20px]">
+        <h4 className="title-medium">Imagenes del dispositivo</h4>
+        <div className="flex ju gap-3 mt-[10px]">
+          <div className="border-[1px] border-lightSecondary p-4 rounded-[5px] aspect-square grid place-content-center w-[15%] group hover:border-lightPrimary cursor-pointer transition-all duration-300 ease-in-out">
+            <img
+              src={dellThumb1}
+              alt=""
+              className="transition-all duration-500 ease-in-out group-hover:scale-[1.15]"
+            />
+          </div>
+          <div className="border-[1px] border-lightSecondary p-4 rounded-[5px] aspect-square grid place-content-center w-[15%] group hover:border-lightPrimary cursor-pointer transition-all duration-300 ease-in-out">
+            <img
+              src={dellThumb2}
+              alt=""
+              className="transition-all duration-500 ease-in-out group-hover:scale-[1.15]"
+            />
+          </div>
+          <div className="border-[1px] border-lightSecondary p-4 rounded-[5px] aspect-square grid place-content-center w-[15%] group hover:border-lightPrimary cursor-pointer transition-all duration-300 ease-in-out">
+            <img
+              src={dellThumb3}
+              alt=""
+              className="transition-all duration-500 ease-in-out group-hover:scale-[1.15]"
+            />
+          </div>
+        </div>
+      </section>
       <Card.Container className="mt-36 ">
         <AccordionWrapper
           className="flex flex-col gap-10"
@@ -103,56 +145,25 @@ export default function SectionTec() {
                   </p>
                 </div>
               </AccordionHeader>
-              <AccordionContent className="accordion-content-two-columns">
-                {/*  <div className="accordion-grid-item">
-            <img src={} alt="" />
-          </div>
-          <div className="accordion-grid-item">
-            <img src={} alt="" />
-          </div> */}
-              </AccordionContent>
-            </AccordionCard>
-          </Card.Connector>
-
-          <Card.Connector>
-            <AccordionCard value="item-3" name="carda3">
-              <AccordionHeader>
-                <div>
-                  <h3 className="title-medium">
-                    Controladores y actualizaciones
-                  </h3>
-                  <p className="paragraph-small">
-                    Encontrá las actualizaciones o drivers de tu dispositivo
-                  </p>
-                </div>
-              </AccordionHeader>
-              <AccordionContent className="accordion-content-five-columns">
-                <div className="accordion-grid">
-                  <div className="accordion-grid-item">
-                    <p className="titleCardNotebook">Audio</p>
-                    <p className="descriptionCardNotebook">
-                      Realtek HD Audio Driver
-                    </p>
-                    <p className="descriptionCardNotebook">
-                      S.O: Windows 11 64bit
-                    </p>
+              <AccordionContent className="p-5">
+                <article className="flex w-[70%] mx-auto justify-around">
+                  <div className="text-center border-[0.5px] p-3 cursor-pointer border-lightSecondary border-opacity-60 rounded-[9px] hover:border-secondary transition-all duration-300 ease-in-out group">
+                    <h3 className="title-medium">Microsoft Windows</h3>
+                    <img
+                      src={windows}
+                      alt=""
+                      className="group-hover:scale-[1.05] transition-transform duration-300 ease-in-out"
+                    />
                   </div>
-                  <div className="accordion-grid-item">
-                    <p className="titleCardNotebook">Versión</p>
-                    <p className="descriptionCardNotebook">6.0.9373.1</p>
+                  <div className="text-center border-[0.5px] p-3 cursor-pointer border-lightSecondary border-opacity-60 rounded-[9px] hover:border-secondary transition-all duration-300 ease-in-out group">
+                    <h3 className="title-medium">GNU/Linux Huayra</h3>
+                    <img
+                      src={huaira}
+                      alt=""
+                      className="group-hover:scale-[1.05] transition-transform duration-300 ease-in-out w-[90%] mx-auto mt-4"
+                    />
                   </div>
-                  <div className="accordion-grid-item">
-                    <p className="titleCardNotebook">Tamaño</p>
-                    <p className="descriptionCardNotebook">38,08 MB </p>
-                  </div>
-                  <div className="accordion-grid-item">
-                    <p className="titleCardNotebook">Fecha</p>
-                    <p className="descriptionCardNotebook">Jul 25, 2023</p>
-                  </div>
-                  <div className="accordion-grid-item iconDownload">
-                    {/* <img className="download" src={download} alt="" /> */}
-                  </div>
-                </div>
+                </article>
               </AccordionContent>
             </AccordionCard>
           </Card.Connector>

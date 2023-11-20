@@ -2,7 +2,7 @@ import { netbook } from "../../../assets";
 
 export default function SectionNotebook() {
   return (
-    <div className="container mx-auto text-center flex justify-between h-[400px]">
+    <div className="relative container mx-auto text-center flex justify-between h-[400px] z-50 ">
       <div className="w-full max-w-[80%] mx-auto flex ">
         <div className="relative w-[50%]">
           <span className="absolute top-[-10%] left-[40%] bg-primary w-[170px] h-[170px] z-[3]">
