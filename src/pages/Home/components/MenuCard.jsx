@@ -1,5 +1,5 @@
-import { Card } from "../../../components/Card";
 import { topThumb } from "../../../assets";
+import { Card } from "../../../components/shared/Card";
 
 export default function MenuCard({ className }) {
   return (

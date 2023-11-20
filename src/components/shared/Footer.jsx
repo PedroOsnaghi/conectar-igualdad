@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:src/pages/Home/components/Footer.jsx
-import { logoME, logoArgentinaUnida } from "../../../assets";
-========
-import { logoME, logoArgentinaUnida } from "../../assets";
->>>>>>>> notebook:src/components/shared/Footer.jsx
+import { logoArgentinaUnida, logoME } from "../../assets";
 
 export default function Footer() {
   return (
