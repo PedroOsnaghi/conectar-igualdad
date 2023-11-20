@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <nav className="bg-secondary/80 py-3 text-lightPrimary sticky top-0 backdrop-blur-lg z-[1000] ">
@@ -8,13 +10,13 @@ export default function Navbar() {
         <div className="">
           <ul className="flex gap-9 text-lightPrimary   cursor-pointer">
             <li className="hover:opacity-100  transition-all duration-100 opacity-75">
-              Inicio
+              <Link to="/">Inicio</Link>
             </li>
             <li className="hover:opacity-100  transition-all duration-100 opacity-75">
-              Notebook
+              <Link to="/notebook">Notebook</Link>
             </li>
             <li className="hover:opacity-100  transition-all duration-100 opacity-75">
-              Soporte Tecnico
+              <Link to="/login">Soporte Técnico</Link>
             </li>
           </ul>
         </div>
