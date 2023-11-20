@@ -10,7 +10,8 @@ export default {
         lightSecondary: "#9a9898",
         darkPrimary: "#151718",
         darkSecondary: "#202425",
-        gamerRed: "#FF0000",
+        darkTerciary: "#131515",
+        gamerRed: "#FF006B",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

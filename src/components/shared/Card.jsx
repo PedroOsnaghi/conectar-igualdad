@@ -5,13 +5,32 @@ const CardContext = createContext({
   setCurrent: (b) => {
     b;
   },
+  active: null,
+  setActiveCard: (b) => {
+    b;
+  },
 });
 
 export function Card({ children }) {
   return { children };
 }
 
-export function Root({ children, className, name, isConnected = true }) {
+export function Connector({ children }) {
+  return (
+    <div className="relative w-full px-32 z-[0]">
+      {children}
+      <span className="left-0 h-[1px] w-full bg-lightSecondary absolute top-[50%] z-[-10]" />
+      <span className="border-[1px] border-lightSecondary absolute top-[50%] left-0 w-[34px] h-[34px] rounded-full translate-x-[-50%] translate-y-[-50%] bg-darkPrimary flex items-center justify-center">
+        <span className="w-[12px] h-[12px] bg-primary rounded-full shadow-[0_0_14px_5px_rgba(1,186,253,0.7)] " />
+      </span>
+      <span className="border-[1px] border-lightSecondary absolute top-[50%] right-0 w-[34px] h-[34px] rounded-full translate-x-[50%] translate-y-[-50%] bg-darkPrimary flex items-center justify-center">
+        <span className="w-[12px] h-[12px] bg-primary rounded-full shadow-[0_0_14px_5px_rgba(1,186,253,0.7)] " />
+      </span>
+    </div>
+  );
+}
+
+export function Root({ children, className, name }) {
   const { inside, setCurrent, active, setActiveCard } = useContext(CardContext);
 
   const handleMouseEnter = () => {
@@ -25,28 +44,14 @@ export function Root({ children, className, name, isConnected = true }) {
   };
 
   return (
-    <div className="relative w-full">
-      <div
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        className={`transitionShadow transitionTransform border-[1px]  p-0 overflow-hidden rounded-[10px]  ${
-          inside && active == name ? "card-hover " : "border-lightSecondary"
-        }
-        ${isConnected && "mx-32"} ${className}`}
-      >
-        {children}
-      </div>
-      {isConnected && (
-        <>
-          <span className="h-[1px] w-full bg-lightSecondary absolute top-[50%] z-[-1]" />
-          <span className="border-[1px] border-lightSecondary absolute top-[50%] w-[34px] h-[34px] rounded-full translate-x-[-50%] translate-y-[-50%] bg-darkPrimary flex items-center justify-center">
-            <span className="w-[12px] h-[12px] bg-primary rounded-full shadow-[0_0_14px_5px_rgba(1,186,253,0.7)] " />
-          </span>
-          <span className="border-[1px] border-lightSecondary absolute top-[50%] right-0 w-[34px] h-[34px] rounded-full translate-x-[50%] translate-y-[-50%] bg-darkPrimary flex items-center justify-center">
-            <span className="w-[12px] h-[12px] bg-primary rounded-full shadow-[0_0_14px_5px_rgba(1,186,253,0.7)] " />
-          </span>
-        </>
-      )}
+    <div
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className={`transitionShadow transitionTransform border-[1px]  p-0 overflow-hidden rounded-[10px] w-full pointer-events-auto
+      ${className}
+      ${inside && active == name ? "card-hover " : "border-lightSecondary"}`}
+    >
+      {children}
     </div>
   );
 }
@@ -157,3 +162,4 @@ Card.Container = Container;
 Card.Root = Root;
 Card.Image = Image;
 Card.Content = Content;
+Card.Connector = Connector;

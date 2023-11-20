@@ -1,7 +1,7 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { top } from "../assets";
+import { top } from "../../../assets";
 import { useRef } from "react";
-import { useIsVisible } from "../hooks/useIsVisible";
+import { useIsVisible } from "../../../hooks/useIsVisible";
 
 const animate_initial = "opacity-0 translate-x-[-200px]";
 const animate_final = "opacity-100 translate-x-0";
