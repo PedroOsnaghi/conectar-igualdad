@@ -17,7 +17,7 @@ export default function SectionNetbook() {
 
   return (
     <section className="container mx-auto flex flex-col items-center relative mb-[-200px]">
-      <h2 className="title">¿Ya tenes tu Netbook?</h2>
+      <h2 className="title">¿Ya tenés tu Netbook?</h2>
       <div className="flex mt-9">
         <div
           className={`transition-all duration-[1600ms] ease-in-out max-w-[60%]  relative translate-y-[-20%] z-[-10]  ${
@@ -39,7 +39,7 @@ export default function SectionNetbook() {
               isVisibleText ? animate_text_final : animate_text_initial
             } `}
           >
-            Si ya recibiste tu Netbook, podes conocer todas sus funcionalidades,
+            Si ya recibiste tu Netbook, podés conocer todas sus funcionalidades,
             acceder a cursos y tutoriales.
           </p>
           <a

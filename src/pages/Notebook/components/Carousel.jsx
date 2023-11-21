@@ -57,7 +57,7 @@ const Carousel = () => {
         <div className="relative w-[300px] aspect-[9/16] snap-center shrink-0 rounded-[10px] overflow-hidden group ">
           <div className="relative z-10  p-4 px-7 h-full flex flex-col text-[25px] ">
             <h3 className="font-bold text-white leading-[1.2]">
-              Aprende mas sobre Huayra
+              Aprende más sobre Huayra
             </h3>
             <span className="grid place-content-center bg-black p-3 max-w-max rounded-full self-end mt-auto cursor-pointer  hover:bg-darkPrimary">
               <FaPlus className="text-white" />
@@ -95,7 +95,7 @@ const Carousel = () => {
         <div className="relative w-[300px] aspect-[9/16] snap-center shrink-0 rounded-[10px] overflow-hidden group ">
           <div className="relative z-10  p-4 px-7 h-full flex flex-col text-[25px]">
             <h3 className="font-bold text-white leading-[1.2]">
-              Mas Conectar Igualdad
+              Más sobre Conectar Igualdad
             </h3>
             <span className="grid place-content-center bg-black p-3 max-w-max rounded-full self-end mt-auto cursor-pointer  hover:bg-darkPrimary">
               <FaPlus className="text-white" />

@@ -35,7 +35,7 @@ export default function About() {
                 className="flex items-center gap-4 text-lg text-lightPrimary bg-darkPrimary bg-opacity-75 max-w-max mt-6 py-1 px-8 border-[.5px] border-lightSecondary rounded-[5px] hover:bg-secondary/40 hover:border-primary pointer-events-auto cursor-pointer z-[100] transition-colors duration-100"
                 href="#"
               >
-                Leer mas
+                Leer más
                 <FaArrowUpRightFromSquare className="text-md" />
               </a>
             </Card.Content>
@@ -61,7 +61,7 @@ export default function About() {
                 className="flex items-center gap-4 text-lg text-lightPrimary bg-darkPrimary bg-opacity-75 max-w-max mt-6 py-1 px-8 border-[.5px] border-lightSecondary rounded-[5px] hover:bg-secondary/40 hover:border-primary pointer-events-auto cursor-pointer z-[100] transition-colors duration-100"
                 href="#"
               >
-                Leer mas
+                Leer más
                 <FaArrowUpRightFromSquare className="text-md" />
               </a>
             </Card.Content>
@@ -88,7 +88,7 @@ export default function About() {
                 className="flex items-center gap-4 text-lg text-lightPrimary bg-darkPrimary bg-opacity-75 max-w-max mt-6 py-1 px-8 border-[.5px] border-lightSecondary rounded-[5px] hover:bg-secondary/40 hover:border-primary pointer-events-auto cursor-pointer z-[100] transition-colors duration-100"
                 href="#"
               >
-                Leer mas
+                Leer más
                 <FaArrowUpRightFromSquare className="text-md" />
               </a>
             </Card.Content>

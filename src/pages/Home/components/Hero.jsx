@@ -28,7 +28,7 @@ export default function Hero() {
           <span className="animate-[fogBlueRight] animate-infinite animate-duration-[4000ms] animate-ease animate-alternate animate-delay-[1500ms]   bg-primary w-[20%] aspect-square absolute top-[10%] right-[30%] rounded-full filter blur-2xl z-[-10]" />
         </div>
         <h3 className="mx-auto text-2xl font-inter font-semibold flex gap-2 mt-[35px]">
-          <span className="text-lightSecondary">Conoce el nuevo modelo</span>
+          <span className="text-lightSecondary">Conocé el nuevo modelo</span>
           <span className="font-semibold gamer-gradient">
             Netbook DELL 2023
           </span>

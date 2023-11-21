@@ -18,7 +18,7 @@ export default function SectionNotebook() {
           <span className="absolute top-[16px] left-[70%] bg-gamerRed w-[140px] h-[140px] z-[3]">
             <span className="absolute left-[20%] h-[140px] translate-y-[20%]">
               <h2 className="relative text-lightPrimary font-bold text-[44px] z-[4]">
-                Generacion
+                Generación
               </h2>
             </span>
           </span>

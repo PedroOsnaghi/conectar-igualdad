@@ -27,7 +27,7 @@ export default function MenuCard({ className }) {
 
           <Card.Content className="py-3 px-3 " pointer>
             <h3 className="text-[16px] text-lightSecondary font-semibold">
-              Conoce mas sobre tu Netbook
+              Conocé más sobre tu Netbook
             </h3>
             <p className="text-[12px] text-lightPrimary opacity-30 mt-4">
               Make your design token distribution even more flexible and
@@ -77,7 +77,7 @@ export default function MenuCard({ className }) {
 
           <Card.Content className="py-3 px-3" pointer>
             <h3 className="text-[16px] text-lightSecondary font-semibold">
-              Asistencia tecnica
+              Asistencia técnica
             </h3>
             <p className="text-[12px] text-lightPrimary opacity-30 mt-4">
               Make your design token distribution even more flexible and

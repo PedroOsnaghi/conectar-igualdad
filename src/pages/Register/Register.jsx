@@ -248,13 +248,13 @@ export default function Register() {
               <article className="flex flex-col w-[40%]  text-white bg-primary rounded-md overflow-hidden px-4 py-7">
                 <Step
                   number="1"
-                  title="Informacion personal"
+                  title="Información personal"
                   description="Completa tus datos personales"
                   isActive={steep}
                 />
                 <Step
                   number="2"
-                  title="Informacion Educativa"
+                  title="Información Educativa"
                   description="Completa los datos de tu escuela"
                   isActive={steep}
                   isConnected
@@ -305,7 +305,7 @@ export default function Register() {
                       <Input
                         className="flex-1 max-w-auto mr-5"
                         name="dni"
-                        label="Numero (sin puntos, espacios o guiones)"
+                        label="Número (sin puntos, espacios o guiones)"
                         placeholder="Numero de documento"
                         type="number"
                         errors={error[1]}
@@ -361,15 +361,15 @@ export default function Register() {
                           className="flex-1"
                           name="calle"
                           placeholder="Calle"
-                          label="Direccion"
+                          label="Dirección"
                           type="text"
                           errors={error[1]}
                           onChange={handleChange}
                         />
                         <Input
                           name="numero"
-                          placeholder="Numero"
-                          label="Numero"
+                          placeholder="Número"
+                          label="Número"
                           type="number"
                           errors={error[1]}
                           onChange={handleChange}
@@ -446,15 +446,15 @@ export default function Register() {
                           className="flex-1"
                           name="ecalle"
                           placeholder="Calle"
-                          label="Direccion"
+                          label="Dirección"
                           type="text"
                           errors={error[2]}
                           onChange={handleChange}
                         />
                         <Input
                           name="enumero"
-                          placeholder="Numero"
-                          label="Numero"
+                          placeholder="Número"
+                          label="Número"
                           type="number"
                           errors={error[2]}
                           onChange={handleChange}
@@ -512,7 +512,7 @@ export default function Register() {
                         onClick={prevStep}
                         className="flex items-center gap-4 text-lg text-lightPrimary bg-darkPrimary bg-opacity-75 max-w-max mt-16 py-1 px-8 border-[.5px] border-lightSecondary rounded-[5px] hover:bg-secondary/40 hover:border-primary pointer-events-auto cursor-pointer z-[100] transition-colors duration-100"
                       >
-                        Atras
+                        Atrás
                       </button>
                       <button
                         onClick={nextStep}
@@ -544,7 +544,7 @@ export default function Register() {
                         onClick={nextStep}
                         className={`transition-opacity duration-[2000ms] ease-in-out delay-[1.5s]  flex items-center gap-4 text-lg text-lightPrimary bg-secondary bg-opacity-75 max-w-max  py-1 px-8 border-[.5px] border-primary rounded-[5px] hover:bg-opacity-100 cursor-pointer`}
                       >
-                        Iniciar sesion
+                        Iniciar sesión
                       </button>
                       <button
                         onClick={prevStep}

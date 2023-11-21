@@ -16,7 +16,7 @@ export default function Footer() {
             className="w-[15%] filter brightness-200 translate-y-[25px]"
           />
           <h3 className="font-inter font-semibold text-lightSecondary text-[20px]">
-            Presidencia de la Nacion
+            Presidencia de la Nación
           </h3>
         </div>
         <hr className="ml-[60px]" />
