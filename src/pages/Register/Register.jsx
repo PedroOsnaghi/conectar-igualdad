@@ -237,7 +237,7 @@ export default function Register() {
 
   return (
     <div className="">
-      <Navbar />
+      <Navbar className="relative" />
       <main className="h-full w-full">
         <div className="container mx-auto px-[100px] h-full w-full">
           <FormContainer className="mt-12 z-30 ">
