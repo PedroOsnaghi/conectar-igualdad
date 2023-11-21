@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({ className }) {
   return (
-    <nav className="bg-secondary/80 py-3 text-lightPrimary sticky top-0 backdrop-blur-lg z-[1000] ">
+    <nav
+      className={`bg-secondary/80 py-3 text-lightPrimary sticky top-0 backdrop-blur-lg z-[1000] ${className}`}
+    >
       <div className="container mx-auto flex items-center justify-between w-full">
         <div>
           <h1 className="text-xl text-lightPrimary">Conectar Igualdad</h1>

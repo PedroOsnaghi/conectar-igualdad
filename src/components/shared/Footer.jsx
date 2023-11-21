@@ -2,7 +2,7 @@ import { logoArgentinaUnida, logoME } from "../../assets";
 
 export default function Footer() {
   return (
-    <footer className="footer-gradient pb-20">
+    <footer className="footer-gradient pb-20 fixed bottom-0 w-full">
       <section className="container mx-auto">
         <div className="flex items-baseline justify-between">
           <img

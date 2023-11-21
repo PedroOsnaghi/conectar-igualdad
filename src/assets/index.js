@@ -20,6 +20,7 @@ import mask2 from "./mask2.webp";
 import mask3 from "./mask3.webp";
 import mask4 from "./mask4.webp";
 import topThumb from "./top-thumb.webp";
+import celebration from "./success_celebration.gif";
 
 export {
   dell,
@@ -44,4 +45,5 @@ export {
   mask3,
   mask4,
   topThumb,
+  celebration,
 };
