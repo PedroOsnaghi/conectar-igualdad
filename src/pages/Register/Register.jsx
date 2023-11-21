@@ -239,7 +239,7 @@ export default function Register() {
     <div className="">
       <Navbar className="relative" />
       <main className="h-full w-full">
-        <div className="container mx-auto px-[100px] h-full w-full">
+        <div className="container mx-auto px-[100px] h-full w-full mb-[64px]">
           <FormContainer className="mt-12 z-30 ">
             <h1 className="text-white text-xl font-bold mb-4 border-b-[1px] border-opacity-30">
               Registrate en Conectar Igualdad

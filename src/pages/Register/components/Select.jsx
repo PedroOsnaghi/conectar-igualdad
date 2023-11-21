@@ -20,7 +20,7 @@ export default function Select({
       <select
         onChange={onSelectHandler}
         disabled={disabled}
-        className={`py-1 px-2 rounded-md bg-darkTerciary text-lightSecondary outline-none border-[.5px]  focus:border-primary placeholder:text-lightSecondary/50 placeholder:italic ${
+        className={`py-1 px-2 rounded-md bg-darkTerciary text-lightSecondary outline-none border-[.5px] border-lightSecondary/30  focus:border-primary placeholder:text-lightSecondary/50 placeholder:italic ${
           !errors[name] && "mb-6"
         } ${errors[name] && "border-red-500"}`}
         id={name}

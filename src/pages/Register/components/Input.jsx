@@ -17,7 +17,7 @@ export default function Input({
         {label}
       </label>
       <input
-        className={`py-1 px-2 mb-0 rounded-md bg-darkTerciary text-lightSecondary outline-none border-[.5px] placeholder:text-lightSecondary/50 placeholder:italic focus:border-primary ${
+        className={`py-1 px-2 mb-0 rounded-md bg-darkTerciary text-lightSecondary outline-none border-[.5px] border-lightSecondary/30 placeholder:text-lightSecondary/50 placeholder:italic focus:border-primary ${
           !errors[name] && "mb-6"
         } ${errors[name] && "border-red-500"}`}
         type={type}
