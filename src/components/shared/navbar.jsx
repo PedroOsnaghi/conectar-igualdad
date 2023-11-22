@@ -7,7 +7,7 @@ export default function Navbar({ className }) {
     >
       <div className="container mx-auto flex items-center justify-between w-full">
         <div>
-          <h1 className="text-xl text-lightPrimary">Conectar Igualdad</h1>
+          <Link to='/' className="text-xl text-lightPrimary">Conectar Igualdad</Link>
         </div>
         <div className="">
           <ul className="flex gap-9 text-lightPrimary   cursor-pointer">

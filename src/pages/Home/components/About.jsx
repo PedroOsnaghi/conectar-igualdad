@@ -1,6 +1,6 @@
 import { Card } from "../../../components/shared/Card";
 
-import { cardImageExample } from "../../../assets";
+import { cardHome1, cardHome2, cardHome3, cardImageExample } from "../../../assets";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 export default function About() {
@@ -18,7 +18,7 @@ export default function About() {
         <Card.Connector>
           <Card.Root key="c1" name="card1" className="flex">
             <Card.Image
-              src={cardImageExample}
+              src={cardHome1}
               alt={"imagen de prueba"}
               className="max-w-[20%]"
             />
@@ -44,7 +44,7 @@ export default function About() {
         <Card.Connector>
           <Card.Root key="c2" name="card2" className="flex">
             <Card.Image
-              src={cardImageExample}
+              src={cardHome2}
               alt={"imagen de prueba"}
               className="max-w-[20%]"
             />
@@ -71,7 +71,7 @@ export default function About() {
         <Card.Connector>
           <Card.Root key="c3" name="card3" className="flex">
             <Card.Image
-              src={cardImageExample}
+              src={cardHome3}
               alt={"imagen de prueba"}
               className="max-w-[20%]"
             />
