@@ -16,7 +16,9 @@ export default function Navbar({ className }) {
       >
         <div className="container px-8 md:px-0 mx-auto flex items-center justify-between w-full">
           <div>
-            <h1 className="text-xl text-lightPrimary">Conectar Igualdad</h1>
+            <h1 className="text-xl text-lightPrimary">
+              <Link to="/">Conectar Igualdad</Link>
+            </h1>
           </div>
           <div className="hidden md:block">
             <ul className="flex gap-9 text-lightPrimary   cursor-pointer">
@@ -24,7 +26,7 @@ export default function Navbar({ className }) {
                 <Link to="/">Inicio</Link>
               </li>
               <li className="hover:opacity-100  transition-all duration-100 opacity-75">
-                <Link to="/notebook">Notebook</Link>
+                <Link to="/netbook">Netbook</Link>
               </li>
               <li className="hover:opacity-100  transition-all duration-100 opacity-75">
                 <Link to="/register">Soporte Técnico</Link>

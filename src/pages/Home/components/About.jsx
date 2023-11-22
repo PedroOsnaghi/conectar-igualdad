@@ -1,6 +1,6 @@
 import { Card } from "../../../components/shared/Card";
 
-import { cardImageExample } from "../../../assets";
+import { cardHome1, cardHome2, cardHome3, cardImageExample } from "../../../assets";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 export default function About() {
@@ -22,7 +22,7 @@ export default function About() {
             className="flex flex-col md:flex-row"
           >
             <Card.Image
-              src={cardImageExample}
+              src={cardHome1}
               alt={"imagen de prueba"}
               className="md:max-w-[20%] w-full"
             />
@@ -52,7 +52,7 @@ export default function About() {
             className="flex flex-col md:flex-row"
           >
             <Card.Image
-              src={cardImageExample}
+              src={cardHome2}
               alt={"imagen de prueba"}
               className="md:max-w-[20%] w-full"
             />
@@ -83,7 +83,7 @@ export default function About() {
             className="flex flex-col md:flex-row"
           >
             <Card.Image
-              src={cardImageExample}
+              src={cardHome3}
               alt={"imagen de prueba"}
               className="md:max-w-[20%] w-full"
             />
