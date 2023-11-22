@@ -27,11 +27,11 @@ export default function MenuCard({ className }) {
 
           <Card.Content className="py-3 px-3 " pointer>
             <h3 className="text-[16px] text-lightSecondary font-semibold">
-              Conocé más sobre tu Netbook
+              Conocé más sobre tu Netbook:
             </h3>
             <p className="text-[12px] text-lightPrimary opacity-30 mt-4">
-              Make your design token distribution even more flexible and
-              customizable using only one configuration.
+              Adéntrate y descubre las especificaciones técnicas, su sistema operativo
+              y todo lo que tu equipo puede ofrecer.
             </p>
           </Card.Content>
         </Card.Root>
@@ -52,11 +52,11 @@ export default function MenuCard({ className }) {
 
           <Card.Content className="py-3 px-3" pointer>
             <h3 className="text-[16px] text-lightSecondary font-semibold">
-              Cursos y tutoriales
+              Cursos y tutoriales:
             </h3>
             <p className="text-[12px] text-lightPrimary opacity-30 mt-4">
-              Make your design token distribution even more flexible and
-              customizable using only one configuration.
+              Aprovecha al máximo tu Netbook, adquiere nuevas habilidades y
+              expande tus conocimientos.
             </p>
           </Card.Content>
         </Card.Root>
@@ -77,11 +77,12 @@ export default function MenuCard({ className }) {
 
           <Card.Content className="py-3 px-3" pointer>
             <h3 className="text-[16px] text-lightSecondary font-semibold">
-              Asistencia técnica
+              Asistencia técnica:
             </h3>
             <p className="text-[12px] text-lightPrimary opacity-30 mt-4">
-              Make your design token distribution even more flexible and
-              customizable using only one configuration.
+              Nuestro equipo de asistencia técnica está listo para
+              ayudarte y poder seguir utilizando tu Netbook como el
+              primer día.
             </p>
           </Card.Content>
         </Card.Root>
