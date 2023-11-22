@@ -24,7 +24,7 @@ export default function Navbar({ className }) {
         </div>
         <div>
           <button className="bg-primary py-1 px-3 rounded-[5px] hover:bg-opacity-75 cursor-pointer ">
-            Ingresar
+            <Link to ="/login">Ingresar</Link>
           </button>
         </div>
       </div>
