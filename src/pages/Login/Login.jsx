@@ -37,7 +37,10 @@ export default function Login() {
     
 
     setErrors(newErrors);
-    if (newErrors === undefined || !newErrors) navigate("/");
+    if (Object.keys(newErrors).length === 0) {
+      console.log("Redirigiendo a /");
+      navigate("/");
+    }
 
   };
   
@@ -90,6 +93,7 @@ export default function Login() {
                     </span>
                   </div>
                   <button
+                  type="submit"
                     className={`transition-opacity duration-[2000ms] ease-in-out delay-[1.5s]  flex items-center mx-auto  gap-4 text-lg text-lightPrimary bg-secondary bg-opacity-75 max-w-max mt-8 md:mt-16 py-1 px-8 border-[.5px] border-primary rounded-[5px] hover:bg-opacity-100 cursor-pointer`}
                     onClick={handleSubmit}
                   >
