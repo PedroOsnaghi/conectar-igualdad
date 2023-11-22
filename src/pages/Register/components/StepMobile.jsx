@@ -7,33 +7,23 @@ export default function StepMobile({
   className,
 }) {
   return (
-    <div className="flex flex-col gap-2 items-center mb-[45px]">
+    <div className="relative flex flex-col">
       <span
-        className={`relative transition-all duration-300 ease-in-out p-4 border-[1px]  border-white z-10 rounded-full h-[50px] aspect-square grid place-content-center text-xl ${
-          isActive >= parseInt(number) && "bg-secondary text-white"
+        className={`relative transition-all duration-300 ease-in-out p-4 border-[1px]  border-white z-10 rounded-full h-[50px] w-[50px] aspect-square grid place-content-center text-xl  ${
+          isActive >= parseInt(number)
+            ? "bg-secondary text-white"
+            : "bg-primary text-lightPrimary"
         } ${className}`}
       >
         {number}
-        {isConnected && (
-          <span
-            className={`transition-all duration-300 ease-in-out w-[2px] h-[50px] absolute top-0 translate-y-[-100%] left-[50%] z-[-1]] bg-lightPrimary ${
-              isActive >= parseInt(number) && "bg-secondary"
-            }`}
-          />
-        )}
       </span>
-      <span
-        style={{ display: isActive === parseInt(number) ? "block" : "none" }}
-      >
-        <h4
-          className={`transition-all duration-300 ease-in-out title-medium text-white ${
-            isActive >= parseInt(number) && "text-secondary "
+      {isConnected && (
+        <span
+          className={`transition-all duration-300 ease-in-out w-[2px] h-[60px] rotate-[-90deg] absolute top-0  left-[-25px] translate-y-[-5%]  bg-lightPrimary ${
+            isActive >= parseInt(number) && "bg-secondary"
           }`}
-        >
-          {title}
-        </h4>
-        <p className="opacity-80">{description}</p>
-      </span>
+        />
+      )}
     </div>
   );
 }

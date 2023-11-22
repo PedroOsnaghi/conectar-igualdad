@@ -30,7 +30,6 @@ const provincias_argentinas = [
   "Santa Cruz",
   "Santa Fe",
   "Santiago del Estero",
-  "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
   "Tucumán",
 ];
 
@@ -48,7 +47,7 @@ const partidos = {
     "San Isidro",
   ],
   Catamarca: [
-    "San Fernando del Valle de Catamarca",
+    "San Fernando del Valle",
     "La Merced",
     "Santa María",
     "Ancasti",
@@ -275,7 +274,7 @@ export default function Register() {
                   isConnected
                 />
               </article>
-              <article className="flex md:hidden  md:flex-col md:w-[40%]  text-white bg-primary rounded-md overflow-hidden px-4 py-7">
+              <article className="flex md:hidden  md:flex-col md:w-[40%] justify-between  text-white bg-primary rounded-md overflow-hidden px-4 py-7">
                 <StepMobile
                   number="1"
                   title="Información personal"
@@ -304,12 +303,12 @@ export default function Register() {
                   isConnected
                 />
               </article>
-              <article className=" px-4 flex flex-col w-full h-[792px]">
-                <form className="h-full" action="">
+              <article className=" md:px-4 flex flex-col w-full md:h-[792px]">
+                <form className="w-full h-full" action="">
                   <fieldset
                     data-name="1"
                     style={{ display: steep === 1 ? "flex" : "none" }}
-                    className="flex flex-col h-full justify-between"
+                    className="flex-col h-full justify-between w-full"
                   >
                     <h3 className="title-medium border-b-[0.5px] border-opacity-25">
                       Datos personales
@@ -323,7 +322,7 @@ export default function Register() {
                       errors={error[1]}
                       onChange={handleChange}
                     />
-                    <div className="flex items-center justify-between gap-3">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-3">
                       <Select
                         name="tipo"
                         label="Tipo"
@@ -364,7 +363,7 @@ export default function Register() {
                         placeholder="Seleccione una provincia"
                         errors={error[1]}
                       />
-                      <div className="flex items-center justify-between gap-3">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
                         <Select
                           className="flex-1"
                           name="partido"
@@ -386,7 +385,7 @@ export default function Register() {
                           onChange={handleChange}
                         />
                       </div>
-                      <div className="flex gap-3">
+                      <div className="flex flex-col md:flex-row gap-3">
                         <Input
                           className="flex-1"
                           name="calle"
@@ -449,7 +448,7 @@ export default function Register() {
                         placeholder="Seleccione una provincia"
                         errors={error[2]}
                       />
-                      <div className="flex items-center justify-between gap-3">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
                         <Select
                           className="flex-1"
                           name="epartido"
@@ -471,7 +470,7 @@ export default function Register() {
                           errors={error[2]}
                         />
                       </div>
-                      <div className="flex gap-3">
+                      <div className="flex flex-col md:flex-row gap-3">
                         <Input
                           className="flex-1"
                           name="ecalle"
@@ -517,7 +516,7 @@ export default function Register() {
                       Datos de tu Netbook
                     </h3>
 
-                    <div className="flex mt-3 flex-1   gap-3">
+                    <div className="flex flex-col md:flex-row mt-3 flex-1   gap-3">
                       <Select
                         className="flex-1"
                         name="modelo"
@@ -566,7 +565,7 @@ export default function Register() {
                       <img
                         src={celebration}
                         alt=""
-                        className="mx-auto h-[60%] aspect-square"
+                        className="mx-auto w-full md:h-[60%] aspect-square"
                       />
                     </div>
                     <div className="flex flex-col items-center gap-3 w-full">
