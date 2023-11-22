@@ -4,10 +4,10 @@ import { FaSearch } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <div className="w-full relative h-[30%] min-h-[400px]">
-      <div className=" top-0 left-0 container mx-auto pt-28 w-full h-full grid place-content-center">
+    <div className="w-full relative md:h-[30%] px-8   md:min-h-[400px] min-h-[350px]">
+      <div className=" top-0 left-0 container mx-auto  md:pt-28 pt-16 w-full h-full grid place-content-center">
         <Card.Root className="relative z-30 ">
-          <article className="w-full h-full px-[40px] py-5 bg-darkSecondary">
+          <article className="w-full h-full px-[40px] py-4 bg-darkSecondary">
             <h2 className="title-medium text-white">Encontrá tu modelo...</h2>
             <p className="paragraph-small text-lightPrimary mt-1">
               Buscá tu modelo de netbook y descubre todo lo que necesitas para

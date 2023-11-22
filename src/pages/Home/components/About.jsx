@@ -5,9 +5,9 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 export default function About() {
   return (
-    <section className="container mx-auto flex flex-col items-center mt-[70px]">
-      <h2 className="title">¿Que es conectar igualdad?</h2>
-      <p className="paragraph-medium max-w-[50%] mt-9 text-center ">
+    <section className="container mx-auto flex flex-col items-center mt-4 md:mt-[70px]">
+      <h2 className="title text-center">¿Que es conectar igualdad?</h2>
+      <p className="paragraph-medium md:max-w-[50%] max-w-[80%] mt-9 text-center ">
         Es un programa lanzado por la Presidencia de la Nación, a través del
         Ministerio de Educación, que busca reducir la brecha digital en el
         ámbito educativo mediante la distribución de computadoras portátiles a
@@ -15,15 +15,19 @@ export default function About() {
       </p>
 
       <Card.Container className="mt-36 flex flex-col gap-10">
-        <Card.Connector>
-          <Card.Root key="c1" name="card1" className="flex">
+        <Card.Connector className="hidden">
+          <Card.Root
+            key="c1"
+            name="card1"
+            className="flex flex-col md:flex-row"
+          >
             <Card.Image
               src={cardImageExample}
               alt={"imagen de prueba"}
-              className="max-w-[20%]"
+              className="md:max-w-[20%] w-full"
             />
             <Card.Content>
-              <h3 className="text-[20px] text-lightSecondary font-semibold">
+              <h3 className="text-lg md:text-[20px] text-lightSecondary font-semibold">
                 Quienes pueden acceder al programa ?
               </h3>
               <p className="text-[16px] text-lightPrimary opacity-30 mt-4">
@@ -42,14 +46,18 @@ export default function About() {
           </Card.Root>
         </Card.Connector>
         <Card.Connector>
-          <Card.Root key="c2" name="card2" className="flex">
+          <Card.Root
+            key="c2"
+            name="card2"
+            className="flex flex-col md:flex-row"
+          >
             <Card.Image
               src={cardImageExample}
               alt={"imagen de prueba"}
-              className="max-w-[20%]"
+              className="md:max-w-[20%] w-full"
             />
             <Card.Content>
-              <h3 className="text-[20px] text-lightSecondary font-semibold">
+              <h3 className="text-lg md:text-[20px] text-lightSecondary font-semibold">
                 Quienes pueden acceder al programa ?
               </h3>
               <p className="text-[16px] text-lightPrimary opacity-30 mt-4">
@@ -69,14 +77,18 @@ export default function About() {
         </Card.Connector>
 
         <Card.Connector>
-          <Card.Root key="c3" name="card3" className="flex">
+          <Card.Root
+            key="c3"
+            name="card3"
+            className="flex flex-col md:flex-row"
+          >
             <Card.Image
               src={cardImageExample}
               alt={"imagen de prueba"}
-              className="max-w-[20%]"
+              className="md:max-w-[20%] w-full"
             />
             <Card.Content>
-              <h3 className="text-[20px] text-lightSecondary font-semibold">
+              <h3 className="text-lg md:text-[20px] text-lightSecondary font-semibold">
                 Quienes pueden acceder al programa ?
               </h3>
               <p className="text-[16px] text-lightPrimary opacity-30 mt-4">

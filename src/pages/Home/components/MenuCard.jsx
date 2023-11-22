@@ -1,28 +1,28 @@
-import { topThumb } from "../../../assets";
+import { course, dellThumb2, setting } from "../../../assets";
 import { Card } from "../../../components/shared/Card";
 
 export default function MenuCard({ className }) {
   return (
     <div
-      className={`max-w-[50%] translate-x-[50%] translate-y-[10%] ${className}`}
+      className={`mx-8 md:mx-0 md:max-w-[50%]  md:translate-x-[50%] md:translate-y-[2%] ${className}`}
     >
       <Card.Container
         isConnected={false}
-        className="flex gap-3 border-none py-0 mb-0"
+        className="flex flex-col md:flex-row gap-3 border-none py-0 mb-0"
       >
         <Card.Root
           key="mc1"
           name="mcard1"
           isConnected={false}
-          className="animacion-card-1 flex flex-col  opacity-0"
+          className="group md:animacion-card-1 flex flex-col opacity-100  md:opacity-0 cursor-pointer "
         >
-          <div className="relative z-[5]">
+          <div className="relative z-[5] grid place-content-center">
             <Card.Image
-              src={topThumb}
+              src={dellThumb2}
               alt="Foto de Netbook Conectar Igualdad vista superior"
-              className="max-w-[70%] h-[50%] my-8 mx-auto"
+              className="md:w-[80%]  mx-auto  group-hover:scale-125 transition-transform duration-500 ease-in-out"
             />
-            <span className="absolute bg-primary top-0 left-0 w-full h-full z-[-1]"></span>
+            <span className="absolute bgcard-gradient top-0 left-0 w-full h-full z-[-1]"></span>
           </div>
 
           <Card.Content className="py-3 px-3 " pointer>
@@ -39,15 +39,15 @@ export default function MenuCard({ className }) {
           key="mc2"
           name="mcard2"
           isConnected={false}
-          className="animacion-card-2 flex flex-col  opacity-0"
+          className="group md:animacion-card-2 flex flex-col opacity-100  md:opacity-0   cursor-pointer"
         >
-          <div className="relative z-[5]">
+          <div className="relative z-[5] grid place-content-center cursor-pointer">
             <Card.Image
-              src={topThumb}
+              src={course}
               alt="Foto de Netbook Conectar Igualdad vista superior"
-              className="max-w-[70%] h-[50%] my-8 mx-auto"
+              className="w-[70%] my-[50px]  mx-auto  group-hover:scale-125 transition-transform duration-500 ease-in-out"
             />
-            <span className="absolute bg-primary top-0 left-0 w-full h-full z-[-1]"></span>
+            <span className="absolute bgcard-gradient top-0 left-0 w-full h-full z-[-1] "></span>
           </div>
 
           <Card.Content className="py-3 px-3" pointer>
@@ -64,15 +64,15 @@ export default function MenuCard({ className }) {
           key="mc3"
           name="mcard3"
           isConnected={false}
-          className="animacion-card-3 flex flex-col  opacity-0"
+          className="group md:animacion-card-3 flex flex-col opacity-100  md:opacity-0 cursor-pointer"
         >
-          <div className="relative z-[5]">
+          <div className="relative z-[5] grid place-content-center">
             <Card.Image
-              src={topThumb}
+              src={setting}
               alt="Foto de Netbook Conectar Igualdad vista superior"
-              className="max-w-[70%] h-[50%] my-8 mx-auto"
+              className="w-[90%] my-[27px]  mx-auto  group-hover:scale-125 transition-transform duration-500 ease-in-out"
             />
-            <span className="absolute bg-primary top-0 left-0 w-full h-full z-[-1]"></span>
+            <span className="absolute bgcard-gradient top-0 left-0 w-full h-full z-[-1]"></span>
           </div>
 
           <Card.Content className="py-3 px-3" pointer>

@@ -8,14 +8,14 @@ export default function Footer() {
           <img
             src={logoME}
             alt="Logo Ministerio de Educacion de la Nacion Argentina"
-            className="w-[15%] opacity-50 translate-y-[16px]"
+            className="w-[30%] md:w-[15%] opacity-50 translate-y-[16px]"
           />
           <img
             src={logoArgentinaUnida}
             alt="Logo Argentina Unida"
-            className="w-[15%] filter brightness-200 translate-y-[25px]"
+            className="w-[20%] md:w-[15%] filter brightness-200 translate-y-[25px]"
           />
-          <h3 className="font-inter font-semibold text-lightSecondary text-[20px]">
+          <h3 className="font-inter font-semibold text-lightSecondary text-[6px] md:text-[20px]">
             Presidencia de la Nación
           </h3>
         </div>

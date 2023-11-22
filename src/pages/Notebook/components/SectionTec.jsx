@@ -28,21 +28,21 @@ export default function SectionTec() {
       <section className="w-full text-start mt-[20px]">
         <h4 className="title-medium">Imagenes del dispositivo</h4>
         <div className="flex ju gap-3 mt-[10px]">
-          <div className="border-[1px] border-lightSecondary p-4 rounded-[5px] aspect-square grid place-content-center w-[15%] group hover:border-lightPrimary cursor-pointer transition-all duration-300 ease-in-out">
+          <div className="border-[1px] border-lightSecondary p-4 rounded-[5px] aspect-square grid place-content-center w-[30%] md:w-[15%] group hover:border-lightPrimary cursor-pointer transition-all duration-300 ease-in-out">
             <img
               src={dellThumb1}
               alt=""
               className="transition-all duration-500 ease-in-out group-hover:scale-[1.15]"
             />
           </div>
-          <div className="border-[1px] border-lightSecondary p-4 rounded-[5px] aspect-square grid place-content-center w-[15%] group hover:border-lightPrimary cursor-pointer transition-all duration-300 ease-in-out">
+          <div className="border-[1px] border-lightSecondary p-4 rounded-[5px] aspect-square grid place-content-center w-[30%] md:w-[15%] group hover:border-lightPrimary cursor-pointer transition-all duration-300 ease-in-out">
             <img
               src={dellThumb2}
               alt=""
               className="transition-all duration-500 ease-in-out group-hover:scale-[1.15]"
             />
           </div>
-          <div className="border-[1px] border-lightSecondary p-4 rounded-[5px] aspect-square grid place-content-center w-[15%] group hover:border-lightPrimary cursor-pointer transition-all duration-300 ease-in-out">
+          <div className="border-[1px] border-lightSecondary p-4 rounded-[5px] aspect-square grid place-content-center w-[30%] md:w-[15%] group hover:border-lightPrimary cursor-pointer transition-all duration-300 ease-in-out">
             <img
               src={dellThumb3}
               alt=""
@@ -146,7 +146,7 @@ export default function SectionTec() {
                 </div>
               </AccordionHeader>
               <AccordionContent className="p-5">
-                <article className="flex w-[70%] mx-auto justify-around">
+                <article className="flex flex-col md:flex-row gap-5 md:gap-0  w-[70%] mx-auto justify-around">
                   <div className="text-center border-[0.5px] p-3 cursor-pointer border-lightSecondary border-opacity-60 rounded-[9px] hover:border-secondary transition-all duration-300 ease-in-out group">
                     <h3 className="title-medium">Microsoft Windows</h3>
                     <img

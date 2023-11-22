@@ -54,7 +54,10 @@ export default {
           "0%": {
             opacity: 0,
           },
-          "30%": {
+          30: {
+            opacity: 0,
+          },
+          "60%": {
             opacity: 1,
           },
           "75%": {

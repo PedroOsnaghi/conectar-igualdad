@@ -16,7 +16,7 @@ const Notebook = () => {
       </header>
 
       <Tabs.Root
-        className="container mx-auto flex flex-col w-full"
+        className="container mx-auto px-8 md-px-0 flex flex-col w-full"
         defaultValue="especificaciones"
       >
         <Tabs.List

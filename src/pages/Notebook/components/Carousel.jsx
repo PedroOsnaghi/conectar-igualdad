@@ -29,10 +29,10 @@ const Carousel = () => {
     }
   };
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mt-20 md:mt-0">
       <h2 className="title ">Descubre más ...</h2>
       <div
-        className="relative snap-mandatory snap-x scroll-smooth  flex gap-6 overflow-x-auto mt-5 transition-all duration-500 ease-in-out "
+        className="relative mb-20 pb-5 md:pb-0 md:mb-0 snap-mandatory snap-x scroll-smooth  flex gap-6 overflow-x-auto mt-5 transition-all duration-500 ease-in-out "
         ref={containerRef}
       >
         <div className="relative w-[300px] aspect-[9/16] snap-center shrink-0 rounded-[10px] overflow-hidden group ">

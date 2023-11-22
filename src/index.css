@@ -14,7 +14,7 @@
 
 @layer components {
   .title {
-    @apply text-lightSecondary text-[56px] font-bold;
+    @apply text-lightSecondary text-[28px] md:text-[56px] font-bold;
   }
 
   .title-medium {
@@ -22,7 +22,7 @@
   }
 
   .paragraph-medium {
-    @apply text-[18px] text-lightPrimary opacity-50;
+    @apply md:text-[18px] text-[14px] text-lightPrimary opacity-50;
   }
 
   .paragraph-small {
@@ -94,6 +94,10 @@
     #ff006aa6 31.96%,
     rgba(191, 38, 248, 0.79) 75.79%
   );
+}
+
+.bgcard-gradient {
+  background: linear-gradient(40deg, #2eb5e6 0%, #21445d 100%);
 }
 
 .border-gradient {

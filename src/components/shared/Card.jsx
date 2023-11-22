@@ -17,13 +17,13 @@ export function Card({ children }) {
 
 export function Connector({ children }) {
   return (
-    <div className="relative w-full px-32 z-[0]">
+    <div className="relative w-full md:px-32 px-8 z-[0] ">
       {children}
-      <span className="left-0 h-[1px] w-full bg-lightSecondary absolute top-[50%] z-[-10]" />
-      <span className="border-[1px] border-lightSecondary absolute top-[50%] left-0 w-[34px] h-[34px] rounded-full translate-x-[-50%] translate-y-[-50%] bg-darkPrimary flex items-center justify-center">
+      <span className="hidden md:block left-0 h-[1px] w-full bg-lightSecondary absolute top-[50%] z-[-10]" />
+      <span className="hidden border-[1px] border-lightSecondary absolute top-[50%] left-0 w-[34px] h-[34px] rounded-full translate-x-[-50%] translate-y-[-50%] bg-darkPrimary md:flex items-center justify-center">
         <span className="w-[12px] h-[12px] bg-primary rounded-full shadow-[0_0_14px_5px_rgba(1,186,253,0.7)] " />
       </span>
-      <span className="border-[1px] border-lightSecondary absolute top-[50%] right-0 w-[34px] h-[34px] rounded-full translate-x-[50%] translate-y-[-50%] bg-darkPrimary flex items-center justify-center">
+      <span className="hidden border-[1px] border-lightSecondary absolute top-[50%] right-0 w-[34px] h-[34px] rounded-full translate-x-[50%] translate-y-[-50%] bg-darkPrimary md:flex items-center justify-center">
         <span className="w-[12px] h-[12px] bg-primary rounded-full shadow-[0_0_14px_5px_rgba(1,186,253,0.7)] " />
       </span>
     </div>
@@ -70,7 +70,7 @@ export function Container({ children, className, isConnected = true }) {
 
   return (
     <div
-      className={`w-full border-[1px] border-lightSecondary rounded-md relative py-24 mb-[108px] ${className}`}
+      className={`w-full border-[1px] border-lightSecondary rounded-md relative py-10 md:py-24 md:mb-[108px] ${className}`}
     >
       {isConnected && (
         <>

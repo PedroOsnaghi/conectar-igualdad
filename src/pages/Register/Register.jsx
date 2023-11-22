@@ -6,6 +6,7 @@ import Input from "./components/Input";
 import Select from "./components/Select";
 import Step from "./components/Step";
 import { celebration } from "../../assets";
+import StepMobile from "./components/StepMobile";
 
 const provincias_argentinas = [
   "Buenos Aires",
@@ -239,13 +240,13 @@ export default function Register() {
     <div className="">
       <Navbar className="relative" />
       <main className="h-full w-full">
-        <div className="container mx-auto px-[100px] h-full w-full mb-[64px]">
+        <div className="container mx-auto px-8 md:px-[100px] h-full w-full mb-[64px]">
           <FormContainer className="mt-12 z-30 ">
             <h1 className="text-white text-xl font-bold mb-4 border-b-[1px] border-opacity-30">
               Registrate en Conectar Igualdad
             </h1>
-            <div className="flex gap-3 ">
-              <article className="flex flex-col w-[40%]  text-white bg-primary rounded-md overflow-hidden px-4 py-7">
+            <div className="flex flex-col md:flex-row gap-3 ">
+              <article className="hidden md:flex  md:flex-col md:w-[40%]  text-white bg-primary rounded-md overflow-hidden px-4 py-7">
                 <Step
                   number="1"
                   title="Información personal"
@@ -267,6 +268,35 @@ export default function Register() {
                   isConnected
                 />
                 <Step
+                  number="4"
+                  title="Finalizar registro"
+                  isActive={steep}
+                  description="Registro finalizado"
+                  isConnected
+                />
+              </article>
+              <article className="flex md:hidden  md:flex-col md:w-[40%]  text-white bg-primary rounded-md overflow-hidden px-4 py-7">
+                <StepMobile
+                  number="1"
+                  title="Información personal"
+                  description="Completa tus datos personales"
+                  isActive={steep}
+                />
+                <StepMobile
+                  number="2"
+                  title="Información Educativa"
+                  description="Completa los datos de tu escuela"
+                  isActive={steep}
+                  isConnected
+                />
+                <StepMobile
+                  number="3"
+                  title="Registrar Netbook"
+                  description="Registra tu dispositivo"
+                  isActive={steep}
+                  isConnected
+                />
+                <StepMobile
                   number="4"
                   title="Finalizar registro"
                   isActive={steep}
