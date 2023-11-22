@@ -15,7 +15,7 @@ export default function Navbar({ className }) {
               <Link to="/">Inicio</Link>
             </li>
             <li className="hover:opacity-100  transition-all duration-100 opacity-75">
-              <Link to="/notebook">Notebook</Link>
+              <Link to="/netbook">Netbook</Link>
             </li>
             <li className="hover:opacity-100  transition-all duration-100 opacity-75">
               <Link to="/register">Soporte Técnico</Link>
