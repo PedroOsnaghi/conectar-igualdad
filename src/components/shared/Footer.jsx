@@ -1,8 +1,8 @@
 import { logoArgentinaUnida, logoME } from "../../assets";
 
-export default function Footer() {
+export default function Footer({ className }) {
   return (
-    <footer className="footer-gradient pb-20  bottom-0 w-full">
+    <footer className={`footer-gradient pb-20  bottom-0 w-full ${className}`}>
       <section className="container px-8 md:mx-auto">
         <div className="flex items-baseline justify-between">
           <img

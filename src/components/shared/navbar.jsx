@@ -76,14 +76,12 @@ export default function Navbar({ className }) {
             </Link>
           </li>
           <li className="hover:opacity-100  transition-all duration-100 opacity-75">
-            <Link to="/notebook" onClick={closeMenu}>
-              Notebook
+            <Link to="/netbook" onClick={closeMenu}>
+              Netbook
             </Link>
           </li>
           <li className="hover:opacity-100  transition-all duration-100 opacity-75">
-            <Link to="/register" onClick={closeMenu}>
-              Soporte Técnico
-            </Link>
+            Soporte Técnico
           </li>
         </ul>
       </div>

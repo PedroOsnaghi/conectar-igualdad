@@ -37,13 +37,13 @@ const Notebook = () => {
           </Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content
-          className="grow  rounded-b-md outline-none focus:shadow-[0_0_0_2px] focus:shadow-black"
+          className="grow  rounded-b-md outline-none "
           value="especificaciones"
         >
           <SectionTec />
         </Tabs.Content>
         <Tabs.Content
-          className="grow   rounded-b-md outline-none focus:shadow-[0_0_0_2px] focus:shadow-black"
+          className="grow   rounded-b-md outline-none f"
           value="tab2"
         ></Tabs.Content>
       </Tabs.Root>
