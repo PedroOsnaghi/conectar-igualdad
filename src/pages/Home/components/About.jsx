@@ -28,12 +28,12 @@ export default function About() {
             />
             <Card.Content>
               <h3 className="text-lg md:text-[20px] text-lightSecondary font-semibold">
-                Quienes pueden acceder al programa ?
+                ¿Quiénes pueden acceder al programa ?
               </h3>
               <p className="text-[16px] text-lightPrimary opacity-30 mt-4">
-                Make your design token distribution even more flexible and
-                customizable using only one configuration. The package can be
-                reused by multiple teams and projects.
+                Podrías ser uno de los beneficiarios del programa Conectar Igualdad.
+                Descubre más sobre como este programa puede abrirte las puertas a un
+                mundo de oportunidades tecnológicas.
               </p>
               <a
                 className="flex items-center gap-4 text-lg text-lightPrimary bg-darkPrimary bg-opacity-75 max-w-max mt-6 py-1 px-8 border-[.5px] border-lightSecondary rounded-[5px] hover:bg-secondary/40 hover:border-primary pointer-events-auto cursor-pointer z-[100] transition-colors duration-100"
@@ -58,12 +58,13 @@ export default function About() {
             />
             <Card.Content>
               <h3 className="text-lg md:text-[20px] text-lightSecondary font-semibold">
-                Quienes pueden acceder al programa ?
+                ¿Cómo registrarse?
               </h3>
               <p className="text-[16px] text-lightPrimary opacity-30 mt-4">
-                Make your design token distribution even more flexible and
-                customizable using only one configuration. The package can be
-                reused by multiple teams and projects.
+                Te contamos que el proceso es más sencillo de lo que te imaginás. Si estás 
+                cursando el colegio secundario de una escuela pública, estás a un paso de 
+                acceder a esta herramienta. Descubre cómo puedes ser parte de este programa
+                sin necesidad de hacer trámites complicados.
               </p>
               <a
                 className="flex items-center gap-4 text-lg text-lightPrimary bg-darkPrimary bg-opacity-75 max-w-max mt-6 py-1 px-8 border-[.5px] border-lightSecondary rounded-[5px] hover:bg-secondary/40 hover:border-primary pointer-events-auto cursor-pointer z-[100] transition-colors duration-100"
@@ -89,12 +90,13 @@ export default function About() {
             />
             <Card.Content>
               <h3 className="text-lg md:text-[20px] text-lightSecondary font-semibold">
-                Quienes pueden acceder al programa ?
+                Más información
               </h3>
               <p className="text-[16px] text-lightPrimary opacity-30 mt-4">
-                Make your design token distribution even more flexible and
-                customizable using only one configuration. The package can be
-                reused by multiple teams and projects.
+                Profundiza en los detalles de esta política de inclusión digital que
+                está cambiando la forma en que los jóvenes acceden a las nuevas tecnologías.
+                Descubre cómo el programa distribuye material educativo y tecnológico, y las 
+                acciones de conectividad que está desplegando en todo el país.
               </p>
               <a
                 className="flex items-center gap-4 text-lg text-lightPrimary bg-darkPrimary bg-opacity-75 max-w-max mt-6 py-1 px-8 border-[.5px] border-lightSecondary rounded-[5px] hover:bg-secondary/40 hover:border-primary pointer-events-auto cursor-pointer z-[100] transition-colors duration-100"
