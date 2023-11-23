@@ -30,8 +30,8 @@ export default function MenuCard({ className }) {
               Conocé más sobre tu Netbook
             </h3>
             <p className="text-[12px] text-lightPrimary opacity-30 mt-4">
-              Make your design token distribution even more flexible and
-              customizable using only one configuration.
+              Adéntrate y descubre las especificaciones técnicas, su sistema
+              operativo y todo lo que tu equipo puede ofrecer.
             </p>
           </Card.Content>
         </Card.Root>
@@ -55,8 +55,8 @@ export default function MenuCard({ className }) {
               Cursos y tutoriales
             </h3>
             <p className="text-[12px] text-lightPrimary opacity-30 mt-4">
-              Make your design token distribution even more flexible and
-              customizable using only one configuration.
+              Aprovecha al máximo tu netbook, adquiere nuevas habilidades y
+              expande tus conocimientos.
             </p>
           </Card.Content>
         </Card.Root>
@@ -80,8 +80,8 @@ export default function MenuCard({ className }) {
               Asistencia técnica
             </h3>
             <p className="text-[12px] text-lightPrimary opacity-30 mt-4">
-              Make your design token distribution even more flexible and
-              customizable using only one configuration.
+              Nuestro equipo de asistencia técnica está listo para ayudarte y
+              poder seguir utilizando tu netbook como el primer día.
             </p>
           </Card.Content>
         </Card.Root>

@@ -2,6 +2,7 @@ import { dell } from "../../../assets";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import LogoMinisterio from "../../../components/LogoMinisterio";
 import MenuCard from "./MenuCard";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -37,8 +38,10 @@ export default function Hero() {
           className="flex items-center gap-4 text-lg text-lightPrimary bg-secondary bg-opacity-75 mx-auto mt-6 py-1 px-8 border-[.5px] border-primary rounded-[5px] hover:bg-opacity-100 cursor-pointer"
           href="#"
         >
-          Ver Modelo
-          <FaArrowUpRightFromSquare className="text-md" />
+          <Link to="/netbook" className="flex items-center gap-3">
+            Ver Modelo
+            <FaArrowUpRightFromSquare className="text-md" />
+          </Link>
         </a>
         <MenuCard className="flex md:hidden md:absolute md:top-0 md:left-0 py-10" />
       </div>

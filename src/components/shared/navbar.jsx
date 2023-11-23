@@ -1,9 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { useState } from "react";
 
 export default function Navbar({ className }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  let location = useLocation();
+
+  console.log(location.pathname);
 
   const closeMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -22,14 +25,28 @@ export default function Navbar({ className }) {
           </div>
           <div className="hidden md:block">
             <ul className="flex gap-9 text-lightPrimary   cursor-pointer">
-              <li className="hover:opacity-100  transition-all duration-100 opacity-75">
+              <li
+                className={`hover:opacity-100  transition-all duration-100  ${
+                  location.pathname === "/"
+                    ? "opacity-100 font-semibold border-b-[2px] border-b-primary"
+                    : "opacity-75"
+                }`}
+              >
                 <Link to="/">Inicio</Link>
               </li>
-              <li className="hover:opacity-100  transition-all duration-100 opacity-75">
+              <li
+                className={`hover:opacity-100  transition-all duration-100  ${
+                  location.pathname === "/netbook"
+                    ? "opacity-100 font-semibold border-b-[2px] border-b-primary"
+                    : "opacity-75"
+                }`}
+              >
                 <Link to="/netbook">Netbook</Link>
               </li>
-              <li className="hover:opacity-100  transition-all duration-100 opacity-75">
-                <Link to="/register">Soporte Técnico</Link>
+              <li
+                className={`hover:opacity-100  transition-all duration-100 opacity-75`}
+              >
+                Soporte Técnico
               </li>
             </ul>
           </div>
@@ -52,7 +69,7 @@ export default function Navbar({ className }) {
         className="top-0 left-0 bg-darkPrimary/60 backdrop-blur-sm w-full h-full z-[150] fixed "
       ></div>
       <div
-        className={`fixed bg-secondary top-[55px] right-0 z-[200] translate-x-[100%] h-full w-[50%] p-4 border-[1px] border-primary ${
+        className={`fixed bg-secondary top-[55px] right-0 z-[200] translate-x-[100%] h-full w-[60%] p-4 border-[1px] border-primary ${
           isMenuOpen ? "animate-fade-left animate-duration-300" : " "
         }`}
       >

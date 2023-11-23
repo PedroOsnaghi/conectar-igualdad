@@ -107,7 +107,7 @@ export default function Login() {
           </FormContainer>
         </div>
       </main>
-      <Footer className="fixed" />
+      <Footer className="md:fixed" />
     </>
   );
 }
